@@ -19,10 +19,10 @@
 
 		</style>
 	</head>
-	<body>
+	<body onresize="onresize()">
 
     <header class="header" id="header">
-      <nav class="nav container flex" id="nav">
+      <nav class="nav flex container" id="nav">
         <a href="#"><img src="images/logo.svg" alt="" class="nav_logo"></a>
         <div class="menu_content " id="menu-content">
           <div class="close_wrapper flex">
@@ -30,21 +30,37 @@
               <a href="#" id="close-icon"><img src="images/icon-close.svg" class="close_icon" alt=""></a>
           </div>
           <ul class="nav_navbar grid" id="nav-navbar">
-            <li class="nav_item"><a href="#about" class="nav_link">About</a></li>
-            <li class="nav_item"><a href="#careers" class="nav_link">Carrer</a></li>
-            <li class="nav_item"><a href="#events" class="nav_link">Events</a></li>
-            <li class="nav_item"><a href="#products" class="nav_link">Products</a></li>
-            <li class="nav_item"><a href="#support" class="nav_link">Support</a></li>
+              <li class="nav_item"><a href="#about" class="nav_link">About</a>
+             <div class="underline active"></div>
+          </li>
+            <li class="nav_item">
+              <a href="#careers" class="nav_link">Carrer</a>
+             <div class="underline active"></div>
+            </li>
+            <li class="nav_item">
+              <a href="#events" class="nav_link">Events</a>
+             <div class="underline active"></div>
+            </li>
+            <li class="nav_item">
+              <a href="#products" class="nav_link">Products</a>
+             <div class="underline active"></div>
+            </li>
+            <li class="nav_item">
+              <a href="#support" class="nav_link">Support</a>
+             <div class="underline active"></div>
+            </li>
           </ul>
         </div>
         <a href="#" id="hamburger-menu" ><img src="images/icon-hamburger.svg" alt="" class="btn_menu"></a>
       </nav>
     </header>
-    <main class="main container">
-      <section class="hero section flex">
-        <h1 class="hero_title">Immersive experiences that deliver</h1>
+    <main class="main ">
+      <section class="hero section ">
+        <div class="hero_content flex container">
+          <h1 class="hero_title">Immersive experiences that deliver</h1>
+        </div>
       </section>
-      <section class="interactive section">
+      <section class="interactive section container">
         <div class="interactive_content grid">
           <img src="images/mobile/image-interactive.jpg" alt="">
           <div class="interactive_card flex">
@@ -56,49 +72,17 @@
           </div>
         </div>
       </section>
-      <section class="creations section">
-        <div class="creations_content grid">
-          <h2>Our Creations</h2>
-          <div class="image_gallery grid">
-            <figure>
-              <img src="images/mobile/image-deep-earth.jpg" alt="">
-            <figcaption>Deep Earth</figcaption>
-            </figure>
-            <figure>
-              <img src="images/mobile/image-night-arcade.jpg" alt="">
-            <figcaption>Night Arcade</figcaption>
-            </figure>
-            <figure>
-              <img src="images/mobile/image-soccer-team.jpg" alt="">
-            <figcaption>Soccer Team VR</figcaption>
-            </figure>
-            <figure>
-              <img src="images/mobile/image-grid.jpg" alt="">
-            <figcaption>The <br> Grid</figcaption>
-            </figure>
-            <figure>
-              <img src="images/mobile/image-from-above.jpg" alt="">
-            <figcaption>From Up Above VR</figcaption>
-            </figure>
-            <figure>
-              <img src="images/mobile/image-pocket-borealis.jpg" alt="">
-            <figcaption>Pocket Borealis</figcaption>
-            </figure>
-            <figure>
-              <img src="images/mobile/image-curiosity.jpg" alt="">
-            <figcaption>The curiosity</figcaption>
-            </figure>
-            <figure>
-              <img src="images/mobile/image-fisheye.jpg" alt="">
-            <figcaption>Make it fisheye</figcaption>
-            </figure>
+      <section class="creations ">
+        <div class="creations_content grid container">
+          <h2 id="creation-title">Our Creations</h2>
+          <div class="image_gallery grid" id="gallery">
           </div>
-          <button class="btn btn--see_all">See ALl</button>
+          <button class="btn btn--see_all" id="btn-seeall">See ALl</button>
         </div>
       </section>
     </main>
-    <footer class="footer section">
-        <div class="footer_content grid">
+    <footer class="footer  section">
+        <div class="footer_content grid container">
           <div class="footer_nav_wrapper flex">
             <img src="images/logo.svg" alt="">
              <ul class="footer_nav grid">
