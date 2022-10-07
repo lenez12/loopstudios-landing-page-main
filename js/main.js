@@ -58,9 +58,9 @@ const Gallery = [
 ];
 
 const gallery = document.getElementById("gallery");
-Gallery.forEach((item) => {
+Gallery.forEach((item, index) => {
 	gallery.innerHTML += `
- <figure id="gallery-figure">
+ <figure id="gallery-figure-${index}">
 			<img src="${item.path}" alt="">
 			<figcaption>${item.caption}</figcaption>
 		</figure>
